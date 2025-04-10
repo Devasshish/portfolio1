@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- GSAP Library -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    </head>
+    <body>
+        <div id="mobile-warning" class="mobile-warning">
+            <div class="warning-content">
+                <h3>⚠️ Best Viewed on Desktop</h3>
+                <p>This portfolio is designed for desktop/laptop viewing. Some
+                    features may not work properly on mobile devices.</p>
+                <div class="warning-buttons">
+                    <button id="continue-mobile">Continue Anyway</button>
+                    <button id="leave-mobile">Open on Desktop</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="loader">
+            <div class="loader-content">
+                <div class="loader-spinner"></div>
+                <p>Loading...</p>
+            </div>
+        </div> -->
+        <nav>
+            <div class="left-nav"><span>DM</span></div>
+            <div class="right-nav">
+                <div class="connect-btn">
+                    Lets Connect
+                </div>
+                <div class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="first-section">
+                <div class="text-background">
+                    <div class="text-row">
+                        <span class="txt frontend">RONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM .</span>
+                        <span class="txt solver"> SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM .</span>
+                        <span class="txt solver"> SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt solver">EB</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="solver op">WEB</span>
+                        <span class="developer op">DEVELOPER</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                    </div>
+
+                    <div class="text-row">
+                        <span class="txt freelance">EELANCE</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="op frontend"> WEB.
+                        </span>
+                        <span class="op developer">DESIGNER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                        <span class="txt solver">SOLVER.</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt developer">ELOPER.</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="op tech">PROBLEM</span>
+                        <span class="op developer">SOLVER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt freelance">FREELANCE</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="op frontend">FRONTEND</span>
+                        <span class="op developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt developer">VELOPER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                    </div>
+
+                    <div class="text-row">
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt solver">SOLVER.</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt freelance">FREELANCE</span>
+                    </div>
+                    <div class="text-row">
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt problem">PROBLEM</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                    </div>
+
+                    <div class="text-row">
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                        <span class="txt frontend">FRONTEND</span>
+                        <span class="txt developer">DEVELOPER.</span>
+                        <span class="txt solver">SOLVER.</span>
+                        <span class="txt tech">TECH</span>
+                    </div>
+                    <div class="center-mimoji" id="userContent">
+                        <img
+                            src="mimoji.png"
+                            alt>
+                    </div>
+                    <div class="laptop-center">
+                        <img
+                            src="./laptop.webp"
+                            alt class="laptop-image">
+                    </div>
+                </div>
+            </div>
+            <div class="lb"></div>
+            <div class="second-section">
+                <h2>ABOUT ME</h2>
+                <p>
+                    I am passionate about web development and design, with
+                    experience in creating intuitive websites and applications.
+                    My knowledge of Figma allows me to design user-friendly
+                    interfaces, enhancing the overall digital experience.
+                </p>
+                <p>
+
+                    My technical skills include HTML, CSS, JavaScript, Tailwind
+                    CSS, Django, VB.NET, ASP.NET, PHP, and MySQL. I enjoy
+                    combining creativity and technology to build functional and
+                    effective solutions.
+                </p>
+                <p>
+                    I'm always eager to learn and explore new tools, including
+                    AI integration, to improve my work and stay updated with the
+                    latest trends in web development.
+                </p>
+
+                <div class="list-skills">
+                    <div class="list-skills-item bg-b">Html</div>
+                    <div class="list-skills-item bg-y">Css</div>
+                    <div class="list-skills-item bg-o">JavaScript</div>
+                    <div class="list-skills-item bg-p">Tailwind</div>
+                    <div class="list-skills-item bg-b">C</div>
+                    <div class="list-skills-item bg-y">C++</div>
+                    <div class="list-skills-item bg-o">Python</div>
+                    <div class="list-skills-item bg-p">Django</div>
+                    <div class="list-skills-item bg-b">VB.NET</div>
+                    <div class="list-skills-item bg-y">ASP.NET</div>
+                    <div class="list-skills-item bg-o">PHP</div>
+                    <div class="list-skills-item bg-p">MySQL</div>
+                    <div class="list-skills-item bg-b">Bootstrap</div>
+                    <div class="list-skills-item bg-y">SQLite</div>
+                    <div class="list-skills-item bg-o">Git</div>
+                    <div class="list-skills-item bg-p">GitHub</div>
+                    <div class="list-skills-item bg-b">Vercel</div>
+                    <div class="list-skills-item bg-y">Netlify</div>
+                    <div class="list-skills-item bg-o">AI</div>
+                    <div class="list-skills-item bg-p">GSAP</div>
+
+                    <p>
+                        In addition to my existing skills/knowledge, I am
+                        currently focusing on expanding my expertise in the
+                        following areas and tools:
+                    </p>
+
+                    <div class="list-skills-item bg-b">React JS</div>
+                    <div class="list-skills-item bg-y">MongoDB</div>
+                    <div class="list-skills-item bg-o">Next JS</div>
+                    <div class="list-skills-item bg-p">Express JS</div>
+                </div>
+            </div>
+            <div class="third-section">
+                <p>What I'm working on</p>
+                <h2>Current Projects</h2>
+                <p class="cp-details">In this section, I'm sharing some of the
+                    projects I'm currently working on as a web and digital
+                    designer. From updating websites to creating business
+                    automation systems and exploring personal side projects,
+                    this gives a peek into my daily work and the types of
+                    projects I enjoy.</p>
+                <div class="slider-container">
+                    <div class="slider-section">
+                        <div class="prj">
+                            <img src="smedia.jpg" alt>
+                            <div class="prj-type bg-y">Django</div>
+                            <h3>Social Media Website</h3>
+                            <p>I developed a social media website using Django,
+                                utilizing SQLite as the database. The project
+                                includes essential features like user
+                                registration, login, and password reset, making
+                                the platform accessible and secure.</p>
+                            <p>The website allows users to add posts, like,
+                                comment, save posts, and search for other users.
+                                It also includes a follow system and a dedicated
+                                post view. Additional pages like Contact and
+                                About provide more context, while Django's
+                                built-in admin panel simplifies backend
+                                management.</p>
+                            <div class="visit-btn bg-w">Visit Now</div>
+                        </div>
+                        <div class="prj">
+                            <img src="prj.jpg" alt>
+                            <div class="prj-type bg-w">PHP</div>
+                            <h3>Vehicle Reselling Platform</h3>
+                            <p>I developed a vehicle reselling platform using
+                                PHP, with MySQL as the database. The platform is
+                                designed to connect buyers with verified car
+                                showrooms, offering a reliable and user-friendly
+                                experience for purchasing pre-owned
+                                vehicles.</p>
+                            <p>The system includes features like admin and
+                                dealer logins, allowing them to add, edit, and
+                                manage vehicle listings. Users can browse
+                                available vehicles, apply filters based on
+                                brand, price, and condition, and view detailed
+                                vehicle information with images. Verified
+                                listings from showroom partners ensure trust and
+                                transparency throughout the buying process. The
+                                platform also includes basic analytics and
+                                inquiry tracking to assist dealers in monitoring
+                                performance.</p>
+                            <div class="visit-btn ">Visit Now</div>
+                        </div>
+                        <div class="prj">
+                            <img src="gk.jpg" alt>
+                            <div class="prj-type bg-b">ASP.NET</div>
+                            <h3>Online GK Test System</h3>
+                            <p>I developed an Online GK (General Knowledge) Test
+                                System to help users assess and improve their
+                                knowledge through timed quizzes and instant
+                                results. This platform was built to provide a
+                                smooth and engaging testing experience for users
+                                of all age groups.</p>
+                            <p>The system allows users to register, log in, and
+                                take multiple-choice quizzes based on various GK
+                                categories. Each test is timed, and users
+                                receive immediate feedback on their performance.
+                                The admin panel enables the addition of
+                                questions, management of categories, and review
+                                of user scores. The platform ensures fairness by
+                                randomizing questions and offering a clean,
+                                mobile-responsive interface for
+                                accessibility.</p>
+                            <div class="visit-btn">Visit Now</div>
+                        </div>
+                        <!-- Add more cards here -->
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-section">
+                <div class="h-f-section">
+
+                    <p>WHAT I'VE BUILT </p>
+                    <h5>Case Studies</h5>
+                    <p class="intro">Here's a small case study of one of my
+                        favorite projects
+                        I've
+                        worked on recently. It's a modern social media platform
+                        inspired by the core features of popular apps, with my
+                        own
+                        creative twist on the functionality and design.</p>
+                </div>
+                <div class="prj-details">
+                    <div class="prj-img">
+                        <img src="./smedia.png" alt>
+                    </div>
+                    <div class="prj-detail">
+                        <h2>SocialSphere – <br>Social Media Platform</h2>
+                        <div class="flist">
+
+                            <div class="prj-type bg-b">HTML</div>
+                            <div class="prj-type bg-y">CSS</div>
+                            <div class="prj-type bg-p">JavaScript</div>
+                            <div class="prj-type bg-o">Django</div>
+                            <div class="prj-type bg-b">SQLite</div>
+                        </div>
+                        <p class="overview">I designed and developed
+                            SocialSphere, a feature-rich
+                            social media platform where users can interact with
+                            each other just like they would on any modern social
+                            app.</p>
+                        <div class="prj-desc">
+                            <i class="fa-solid fa-check bg-b"></i>
+                            <p>
+                                <b>User-Centric Features:</b>
+                                SocialSphere includes essential features such as
+                                account creation, posting images or updates,
+                                liking and commenting on posts, saving posts for
+                                later, and following other users. These
+                                functionalities make it easy to build a
+                                connected and engaging online community.
+                            </p>
+                        </div>
+                        <div class="prj-desc">
+                            <i class="fa-solid fa-check bg-y"></i>
+                            <p>
+                                <b>Clean UI with Responsive Layout:</b>
+                                The front-end is built using HTML, CSS, and
+                                JavaScript to create a simple yet elegant
+                                interface. The layout is fully responsive,
+                                making it accessible across devices.
+                            </p>
+                        </div>
+                        <div class="prj-desc">
+                            <i class="fa-solid fa-check bg-p"></i>
+                            <p>
+                                <b>Django-Powered Backend:</b>
+                                The backend is powered by Django with a SQLite
+                                database, enabling secure user authentication
+                                and efficient content management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="prj-details prj2">
+
+                    <div class="prj-detail">
+                        <h2>Vehicle Reselling Platform</h2>
+                        <div class="flist">
+
+                            <div class="prj-type bg-b">HTML</div>
+                            <div class="prj-type bg-y">CSS</div>
+                            <div class="prj-type bg-p">JavaScript</div>
+                            <div class="prj-type bg-o">PHP</div>
+                            <div class="prj-type bg-b">MySQL</div>
+                        </div>
+                        <p class="overview">
+                            I developed a Vehicle Reselling Website that
+                            connects buyers with verified showrooms to purchase
+                            pre-owned vehicles. The system focuses on ensuring
+                            trust, transparency, and ease of use, especially for
+                            users looking for quality-checked second-hand cars.
+                        </p>
+                        <div class="prj-desc">
+                            <i class="fa-solid fa-check bg-b"></i>
+                            <p>
+                                <b>Admin & Dealer Dashboard:</b>
+                                The platform includes a backend dashboard where
+                                admins and registered dealers can upload vehicle
+                                details, manage listings, and track user
+                                inquiries. It also includes basic analytics for
+                                performance tracking.
+                            </p>
+                        </div>
+                        <div class="prj-desc">
+                            <i class="fa-solid fa-check bg-y"></i>
+                            <p>
+                                <b>Buyer-Friendly Interface:</b>
+                                The frontend is designed for easy navigation,
+                                allowing users to browse available cars, filter
+                                by brand, price, and condition, and view
+                                detailed information with images,
+                                specifications, and contact details.
+                            </p>
+                        </div>
+                        <div class="prj-desc">
+                            <i class="fa-solid fa-check bg-p"></i>
+                            <p>
+                                <b>Verified Listings by Showrooms:</b>
+                                Every vehicle listed on the platform is first
+                                verified by trusted showroom partners to ensure
+                                authenticity, proper documentation, and
+                                mechanical condition before being published for
+                                sale.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prj-img">
+                        <img src="./VMS.png" alt>
+                    </div>
+                </div>
+                <div class="prj-details prj3">
+                    <div class="prj-img">
+                        <img src="./HMS.png" alt>
+                    </div>
+                    <div class="prj-detail ">
+                        <h2>Hospital Management System</h2>
+                        <div class="flist">
+
+                            <div class="prj-type bg-b">VB.NET</div>
+                            <div class="prj-type bg-y">SQL Server</div>
+                            <div class="prj-type bg-p">Windows Forms</div>
+                            <!-- <div class="prj-type bg-o">Django</div> -->
+                            <!-- <div class="prj-type bg-b">SQLite</div> -->
+                        </div>
+                        <p class="overview">
+                            To simplify and streamline hospital operations, I
+                            developed a custom Hospital Management System using
+                            VB.NET. This system was designed to efficiently
+                            manage patient records, doctor schedules, billing,
+                            appointments, and reporting — all in one desktop
+                            application.
+                        </p>
+                        <div class="prj-desc">
+                            <i class="fa-solid fa-check bg-b"></i>
+                            <p>
+                                <b>Centralized Patient Records: </b>
+                                All patient details including medical history,
+                                appointments, and treatment logs are stored
+                                securely in a structured SQL Server database,
+                                ensuring quick access and organized
+                                record-keeping.
+                            </p>
+                        </div>
+                        <div class="prj-desc">
+                            <i class="fa-solid fa-check bg-y"></i>
+                            <p>
+                                <b>Automated Billing & Reports:</b>
+                                The system automatically generates invoices
+                                based on treatments, services, and medication.
+                                It also provides downloadable reports for daily
+                                transactions, patient history, and appointments.
+                            </p>
+                        </div>
+                        <div class="prj-desc">
+                            <i class="fa-solid fa-check bg-p"></i>
+                            <p>
+                                <b>Doctor & Appointment Scheduling:</b>
+                                A built-in module manages doctor availability
+                                and appointment bookings, reducing manual errors
+                                and improving overall workflow efficiency.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="fifth-section">
+                <div class="h-f-section">
+                    <p>WHERE I'VE STUDIED</p>
+                    <h5>My Education</h5>
+                    <p class="intro1">Here's a quick look at my academic
+                        background, where I learned the foundations of
+                        programming, software development, and real-world IT
+                        skills.</p>
+                </div>
+
+                <div class="edu-details">
+                    <div class="edu-card">
+                        <h3>B.Sc. in Computer Applications & IT</h3>
+                        <p><b>College:</b> D.N. Institute Of Computer
+                            Application</p>
+                        <p><b>University:</b> Sardar Patel University, Anand,
+                            Gujarat</p>
+                        <p><b>Year:</b> 2022 – 2025</p>
+                        <p class="edu-desc">During my degree, I studied
+                            programming, databases, web development, and
+                            software engineering. I worked on several projects,
+                            gaining hands-on experience with real-world
+                            applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sixth-section">
+                <div class="left-s">
+                    <h3>Contact Me</h3>
+                    <p>Interested in connecting? Shoot me a message via the
+                        contact form below.</p>
+                    <form id="contactForm">
+                        <label for="name">Name </label>
+                        <input type="text" id="name" placeholder="Your Name"
+                            required>
+                        <label for="email">Email </label>
+
+                        <input type="email" id="email" placeholder="Your Email"
+                            required>
+                        <label for="message">Message </label>
+
+                        <textarea id="message"
+                            placeholder="Type Your Message ......"
+                            required rows="4"></textarea>
+
+                        <button type="submit" class="bg-y">Submit</button>
+                    </form>
+
+                </div>
+                <div class="right-s">
+                    <img
+                        src="photo.avif"
+                        alt>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footer">
+                <div class="logo"><span>DM</span></div>
+                <div class="lb-bottom"></div>
+                <div class="copyright">
+                    © 2025 Devashish Macwan. All right reserved.
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script>
+
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+          e.preventDefault(); // prevent real form submission
+      
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+      
+          const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. Message: ${message}`;
+          const encodedMsg = encodeURIComponent(whatsappMessage);
+      
+          window.location.href = `https://wa.me/916353186617?text=${encodedMsg}`;
+        });
+
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+
+            if (isMobileDevice()) {
+    document.body.classList.add('mobile-view');
+    
+    document.getElementById('continue-mobile').addEventListener('click', function() {
+      document.body.classList.remove('mobile-view');
+      document.body.classList.add('mobile-continue');
+      localStorage.setItem('mobileContinue', 'true');
+    });
+    
+    document.getElementById('leave-mobile').addEventListener('click', function() {
+      window.location.href = "https://support.google.com/chrome/answer/95417"; // Chrome desktop page
+    });
+    
+    // Check if user previously chose to continue
+    if (localStorage.getItem('mobileContinue') === 'true') {
+      document.body.classList.add('mobile-continue');
+    }
+  }
+
+    // Register GSAP plugins
+    gsap.registerPlugin(ScrollTrigger);
+    
+    // Get elements
+    const laptopImage = document.querySelector('.laptop-image');
+    const userContent = document.getElementById('userContent');
+    const loader = document.getElementById('loader');
+    
+    // Initial setup - hide content completely
+    gsap.set(userContent, { y: 200, opacity: 0 }); // Move it down and make invisible
+    gsap.set(laptopImage, { rotateX: 100, transformOrigin: "bottom center" });
+    
+    // Create a timeline for the initial animation
+    const openingTimeline = gsap.timeline({
+        onComplete: function() {
+            // Hide loader when animation is complete
+            gsap.to(loader, {
+                opacity: 0,
+                duration: 0.5,
+                onComplete: function() {
+                    loader.style.display = 'none';
+                }
+            });
+        }
+    });
+    
+    // Add animations to the timeline
+    openingTimeline
+        .to(laptopImage, {
+            rotateX: 0,
+            duration: 2,
+            ease: "power2.out"
+        })
+        .to(userContent, {
+            y: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: "elastic.out(1, 0.5)" // Add bounce effect
+        }, "-=0.3"); // Start slightly before the laptop finishes opening
+    
+    // Modified scroll trigger to only affect the laptop
+    ScrollTrigger.create({
+        trigger: ".second-section",
+        start: "top bottom-=500",
+        end: "top center",
+        scrub: true,
+        onUpdate: (self) => {
+            // Calculate progress (0 to 1)
+            const progress = self.progress;
+            
+            // Apply rotation based on scroll progress - ONLY to laptop
+            gsap.to(laptopImage, {
+                rotateX: progress * 90, // 0 to 90 degrees
+                opacity: 1 - (progress * 0.8), // Fade out slightly
+                duration: 0.1, // Quick update to follow scroll
+                ease: "none" // Linear animation for smooth scrolling
+            });
+            
+            // Removed the user content animation from here
+        }
+    });
+});
+      </script>
+</html>
